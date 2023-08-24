@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.5" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+      <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
+      <PackageReference Include="NLog.Web.AspNetCore" Version="5.2.3" />
+      <PackageReference Include="Node.js" Version="5.3.0" />
+      <PackageReference Include="node.npm.nuget.js" Version="17.0.1" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+    </ItemGroup>
+
+    
+
+    <ItemGroup>
+      <ProjectReference Include="..\GameCatalogDomain\GameCatalogDomain.csproj" />
+      <ProjectReference Include="..\GameCatalogInteractor\GameCatalogInteractor.csproj" />
+      <ProjectReference Include="..\GameCatalogMsSQL\GameCatalogMsSQL.csproj" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+    </PropertyGroup>
+    
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Pages\page.cshtml" />
+    </ItemGroup>
+    
+
+    <ItemGroup>
+      <Folder Include="wwwroot" />
+    </ItemGroup>
+    
+
+    <ItemGroup>
+      <None Include="wwwroot\GameImg\1.jpg" />
+    </ItemGroup>
+    
+</Project>

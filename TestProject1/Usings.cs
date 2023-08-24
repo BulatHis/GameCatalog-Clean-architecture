@@ -1,0 +1,9 @@
+global using NUnit.Framework;
+global using GameCatalogMsSQL.Hash;
+global using GameCatalogMsSQL.GenerateJWT;
+global using GameCatalogCore.DTO_s.JWT;
+global using GameCatalogDomain.Entity;
+global using GameCatalogMsSQL.IRepositories;
+global using Microsoft.Extensions.Configuration;
+global using Moq;
+global using GameCatalogInteractor.EmailCode;
